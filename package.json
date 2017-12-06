@@ -4,7 +4,7 @@
   "description": "React based web app that covers some of my knowledge with a funny interactive",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack -d && webpack-dev-server",
     "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
