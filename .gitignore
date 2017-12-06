@@ -204,3 +204,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+src/client/public/**
