@@ -4,7 +4,7 @@
   "description": "React based web app that covers some of my knowledge with a funny interactive",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -d --watch",
+    "start": "webpack-dev-server",
     "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +21,8 @@
     "react-dom": "^16.2.0",
     "webpack": "^3.10.0",
     "url-loader": "^0.6.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.9.6"
   }
 }
