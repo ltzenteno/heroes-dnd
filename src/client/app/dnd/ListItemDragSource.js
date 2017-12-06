@@ -4,7 +4,11 @@ import {ItemTypes} from './../dnd/types';
 
 const DragObject = {
   beginDrag(props) {
-    console.log('beginDrag props; ', props)
+    return{
+      item:{
+        ...props.children.props
+      }
+    }
   },
   endDrag(props, monitor, component){
     if(!monitor.didDrop())
@@ -24,7 +28,8 @@ const collect = (connect, monitor) => {
 
 class ListItemDragSource extends Component{
   render(){
-    return(
+    const {connectDragSource} = this.props;
+    return connectDragSource(
       <div>
         {this.props.children}
       </div>
