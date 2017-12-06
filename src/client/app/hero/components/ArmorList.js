@@ -1,33 +1,45 @@
 import React from 'react';
 import ArmorItem from './ArmorItem';
-import img1 from './../../images/armor_1.png'
-import img2 from './../../images/armor_2.png';
-import img3 from './../../images/armor_3.png';
-import img4 from './../../images/armor_4.png';
+import head from './../../images/head.png'
+import torso from './../../images/torso.png';
+import leftArm from './../../images/left_arm.png';
+import rightArm from './../../images/right_arm.png';
+import leftLeg from './../../images/left_leg.png';
+import rightLeg from './../../images/right_leg.png';
 
 const ArmorList = () => {
 
   // TODO for now we hardcode the list of armors
   const items = [
     {
-      name:'armor 1',
-      image:img1,
-      type:'defense'
+      name:'Head',
+      image:head,
+      type:'mega man'
     },
     {
-      name:'armor 2',
-      image:img2,
-      type:'attack'
+      name:'Torso',
+      image:torso,
+      type:'mega man'
     },
     {
-      name:'armor 3',
-      image:img3,
-      type:'heal'
+      name:'Left Arm',
+      image:leftArm,
+      type:'mega man'
     },
     {
-      name:'armor 4',
-      image:img4,
-      type:'defense'
+      name:'Right Arm',
+      image:rightArm,
+      type:'mega man'
+    },
+    {
+      name:'Left Leg',
+      image:leftLeg,
+      type:'mega man'
+    },
+    {
+      name:'Right Leg',
+      image:rightLeg,
+      type:'mega man'
     }
   ];
   const renderItems = () => {
