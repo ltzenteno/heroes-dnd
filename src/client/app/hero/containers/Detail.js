@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ArmorList from './../components/ArmorList';
+import BluePrint from './../components/BluePrint';
 
 class Detail extends Component{
   render(){
@@ -10,7 +11,7 @@ class Detail extends Component{
             <ArmorList/>
           </div>
 	        <div className="column is-8">
-	          Here goes the container
+            <BluePrint/>
 	        </div>
 	      </div>
       </div>
