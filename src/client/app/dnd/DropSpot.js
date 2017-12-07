@@ -4,7 +4,7 @@ import {ItemTypes} from "./types";
 
 const DropObject = {
   drop(props, monitor){
-    console.log('drop props: ', props);
+    console.log('element dropped: ', monitor.getItem());
     return{
       item:monitor.getItem()
     }
@@ -20,6 +20,7 @@ const collect = (connect, monitor) => {
 class DropSpot extends Component{
   render(){
     const {connectDropTarget} = this.props;
+    console.log('DropSpot props: ', this.props);
     return connectDropTarget(
       <div>
         {this.props.children}

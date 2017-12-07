@@ -5,9 +5,7 @@ import {ItemTypes} from './../dnd/types';
 const DragObject = {
   beginDrag(props) {
     return{
-      item:{
-        ...props.children.props
-      }
+      ...props.children.props
     }
   },
   endDrag(props, monitor, component){
@@ -15,7 +13,7 @@ const DragObject = {
       return;
 
     const elem = monitor.getDropResult();
-    console.log('element dropped: ', elem);
+    console.log('element dragged: ', elem);
   }
 };
 

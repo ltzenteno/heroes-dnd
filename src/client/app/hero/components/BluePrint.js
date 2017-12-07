@@ -7,32 +7,56 @@ class BluePrint extends Component{
     return (
       <div style={styles.containerStyle}>
         <div style={styles.headTarget}>
-          <DropSpot>
+          <DropSpot
+            position={styles.headTarget}
+            name="head"
+            data={{example:'hello'}}
+          >
             <div style={{width:styles.headTarget.width, height:styles.headTarget.height}} />
           </DropSpot>
         </div>
         <div style={styles.torsoTarget}>
-          <DropSpot>
+          <DropSpot
+            position={styles.torsoTarget}
+            name="torso"
+            data={{}}
+          >
             <div style={{width:styles.torsoTarget.width, height:styles.torsoTarget.height}}/>
           </DropSpot>
         </div>
         <div style={styles.rightArmTarget}>
-          <DropSpot>
+          <DropSpot
+            position={styles.rightArmTarget}
+            name="rightArm"
+            data={{}}
+          >
             <div style={{width:styles.rightArmTarget.width, height:styles.rightArmTarget.height}}/>
           </DropSpot>
         </div>
         <div style={styles.leftArmTarget}>
-          <DropSpot>
+          <DropSpot
+            position={styles.leftArmTarget}
+            name="leftArm"
+            data={{}}
+          >
             <div style={{width:styles.leftArmTarget.width, height:styles.leftArmTarget.height}}/>
           </DropSpot>
         </div>
         <div style={styles.rightLegTarget}>
-          <DropSpot>
+          <DropSpot
+            position={styles.rightLegTarget}
+            name="rightLeg"
+            data={{}}
+          >
             <div style={{width:styles.rightLegTarget.width, height:styles.rightLegTarget.height}}/>
           </DropSpot>
         </div>
         <div style={styles.leftLegTarget}>
-          <DropSpot>
+          <DropSpot
+            position={styles.leftLegTarget}
+            name="leftLeg"
+            data={{}}
+          >
             <div style={{width:styles.leftLegTarget.width, height:styles.leftLegTarget.height}}/>
           </DropSpot>
         </div>
