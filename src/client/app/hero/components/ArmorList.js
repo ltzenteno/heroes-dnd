@@ -1,5 +1,6 @@
 import React from 'react';
 import ArmorItem from './ArmorItem';
+import ListItemDragSource from './../../dnd/ListItemDragSource';
 import head from './../../images/head.png'
 import torso from './../../images/torso.png';
 import leftArm from './../../images/left_arm.png';
@@ -44,12 +45,17 @@ const ArmorList = () => {
   ];
   const renderItems = () => {
     return items.map((item, index) => {
-      return <ArmorItem
-        key={index}
-        name={item.name}
-        image={item.image}
-        type={item.type}
-      />;
+      return (
+        <ListItemDragSource
+          key={index}
+        >
+          <ArmorItem
+            name={item.name}
+            image={item.image}
+            type={item.type}
+          />
+        </ListItemDragSource>
+      );
     });
   };
 

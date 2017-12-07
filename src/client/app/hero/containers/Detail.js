@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ArmorList from './../components/ArmorList';
 import BluePrint from './../components/BluePrint';
+import { DragDropContext } from "react-dnd";
+import HTML5Backend from "react-dnd-html5-backend";
 
 class Detail extends Component{
   render(){
@@ -19,4 +21,4 @@ class Detail extends Component{
   }
 }
 
-export default Detail;
+export default DragDropContext(HTML5Backend)(Detail);
