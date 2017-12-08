@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
 import blueprint from './../../images/megaman_blueprint.png';
 import DropSpot from './../../dnd/DropSpot';
+import {connect} from 'react-redux';
 
 class BluePrint extends Component{
   render(){
+    const {armor} = this.props;
     return (
       <div style={styles.containerStyle}>
         <div style={styles.headTarget}>
           <DropSpot
             position={styles.headTarget}
             name="head"
-            data={{example:'hello'}}
+            data={armor.head}
           >
             <div style={{width:styles.headTarget.width, height:styles.headTarget.height}} />
           </DropSpot>
@@ -19,7 +21,7 @@ class BluePrint extends Component{
           <DropSpot
             position={styles.torsoTarget}
             name="torso"
-            data={{}}
+            data={armor.torso}
           >
             <div style={{width:styles.torsoTarget.width, height:styles.torsoTarget.height}}/>
           </DropSpot>
@@ -28,7 +30,7 @@ class BluePrint extends Component{
           <DropSpot
             position={styles.rightArmTarget}
             name="rightArm"
-            data={{}}
+            data={armor.rightArm}
           >
             <div style={{width:styles.rightArmTarget.width, height:styles.rightArmTarget.height}}/>
           </DropSpot>
@@ -37,7 +39,7 @@ class BluePrint extends Component{
           <DropSpot
             position={styles.leftArmTarget}
             name="leftArm"
-            data={{}}
+            data={armor.leftArm}
           >
             <div style={{width:styles.leftArmTarget.width, height:styles.leftArmTarget.height}}/>
           </DropSpot>
@@ -46,7 +48,7 @@ class BluePrint extends Component{
           <DropSpot
             position={styles.rightLegTarget}
             name="rightLeg"
-            data={{}}
+            data={armor.rightLeg}
           >
             <div style={{width:styles.rightLegTarget.width, height:styles.rightLegTarget.height}}/>
           </DropSpot>
@@ -55,7 +57,7 @@ class BluePrint extends Component{
           <DropSpot
             position={styles.leftLegTarget}
             name="leftLeg"
-            data={{}}
+            data={armor.leftLeg}
           >
             <div style={{width:styles.leftLegTarget.width, height:styles.leftLegTarget.height}}/>
           </DropSpot>
@@ -116,5 +118,11 @@ const styles = {
   }
 };
 
+const mapStateToProps = state => {
+  const {armor} = state.megaMan;
+  return{
+    armor
+  };
+};
 
-export default BluePrint;
+export default connect(mapStateToProps, null)(BluePrint);

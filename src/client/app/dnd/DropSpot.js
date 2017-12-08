@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {DropTarget} from 'react-dnd';
 import {connect} from 'react-redux';
 import {dropArmorItem} from './../hero/actions';
-import {ItemTypes} from "./types";
+import {ItemTypes} from './types';
+import isEmpty from 'lodash.isempty';
 
 const DropObject = {
   drop(props, monitor){
@@ -20,13 +21,31 @@ const collect = (connect, monitor) => {
 };
 
 class DropSpot extends Component{
-  render(){
-    const {connectDropTarget} = this.props;
-    return connectDropTarget(
+
+  renderArmorItem = () => {
+    const {data} = this.props;
+    return(
       <div>
-        {this.props.children}
+        <img src={data.image} />
       </div>
-    )
+    );
+  };
+
+  render(){
+    const {connectDropTarget, data} = this.props;
+    if(isEmpty(data)){
+      return connectDropTarget(
+        <div>
+          {this.props.children}
+        </div>
+      )
+    }else{
+      return(
+        <div>
+          {this.renderArmorItem()}
+        </div>
+      );
+    }
   }
 }
 
