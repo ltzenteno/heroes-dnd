@@ -3,7 +3,7 @@ import React from 'react';
 const ArmorItem = ({image, name, type}) => {
 
   return(
-    <div className="box">
+    <div className="box" style={{height:130}}>
       <article className="media">
         <div className="media-left">
           <figure className="image is-64x64">
