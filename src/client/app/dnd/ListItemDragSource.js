@@ -13,7 +13,6 @@ const DragObject = {
       return;
 
     const elem = monitor.getDropResult();
-    console.log('element dragged: ', elem);
   }
 };
 

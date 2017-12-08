@@ -1,0 +1,1 @@
+export const DROP_ARMOR_ITEM = 'DROP_ARMOR_ITEM';

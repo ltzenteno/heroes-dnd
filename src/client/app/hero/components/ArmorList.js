@@ -14,31 +14,37 @@ const ArmorList = () => {
   const items = [
     {
       name:'Head',
+      id:'head',
       image:head,
       type:'mega man'
     },
     {
       name:'Torso',
+      id:'torso',
       image:torso,
       type:'mega man'
     },
     {
       name:'Left Arm',
+      id:'leftArm',
       image:leftArm,
       type:'mega man'
     },
     {
       name:'Right Arm',
+      id:'rightArm',
       image:rightArm,
       type:'mega man'
     },
     {
       name:'Left Leg',
+      id:'leftLeg',
       image:leftLeg,
       type:'mega man'
     },
     {
       name:'Right Leg',
+      id:'rightLeg',
       image:rightLeg,
       type:'mega man'
     }
@@ -53,6 +59,7 @@ const ArmorList = () => {
             name={item.name}
             image={item.image}
             type={item.type}
+            id={item.id}
           />
         </ListItemDragSource>
       );
