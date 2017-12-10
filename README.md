@@ -1,4 +1,4 @@
-#Heroes DnD
+# Heroes DnD
 
 For this example we will be using some cool libraries / technologies
 
@@ -22,18 +22,18 @@ we are going to use:
 ---
 ### Building our components
 
-#####ArmorItem.js
+##### ArmorItem.js
 We are going to need a list of armor pieces, for that purpose we create the file `src/client/app/hero/components/ArmorItem.js`, 
 it is a simple functional component that recieves 3
 props which are: `image`, `name`, `type`.
 
-#####ArmorList.js
+##### ArmorList.js
 A list of Armor Items, for every existing armor piece it renders a `ArmorItem` component. 
 
 *TODO: add each container*
 
 ---
-###Redux
+### Redux
 
 In order to implement Redux successfully in our app, we need to install it's dependencies:
 ```
@@ -49,7 +49,7 @@ Once installed, we create our store, we create our store in `src/client/app/stor
 It is important to note that we are using the `composeWithDevTools` function to allow chrome redux extension
 watch our Redux store and make it possible to "time travel" 👌
 
-#####Mega Man reducer
+##### Mega Man reducer
 Once we have running our store we proceed with our first reducer; the Mega Man reducer, this one will contain
 the armor object, for now it will be declared as the following JSON:
 
