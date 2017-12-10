@@ -1,6 +1,7 @@
 import {
   DROP_ARMOR_ITEM,
-  ASSEMBLE_ARMOR
+  ASSEMBLE_ARMOR,
+  RESET_ARMOR
 } from './../actions/types';
 const defaultState = {
   armor:{
@@ -20,6 +21,8 @@ export default (state = defaultState, action) => {
      return dropArmorItem(state, action.payload);
    case ASSEMBLE_ARMOR:
      return assembleArmor(state);
+   case RESET_ARMOR:
+     return resetArmor(state);
    default:
      return state;
  }
@@ -50,4 +53,8 @@ const assembleArmor = state => {
     ...state,
     assembled
   };
+};
+
+const resetArmor = state => {
+  return defaultState;
 };

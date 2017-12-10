@@ -1,2 +1,3 @@
 export const DROP_ARMOR_ITEM = 'DROP_ARMOR_ITEM';
 export const ASSEMBLE_ARMOR = 'ASSEMBLE_ARMOR';
+export const RESET_ARMOR = 'RESET_ARMOR';
