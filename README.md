@@ -24,7 +24,7 @@ we are going to use:
 
 ##### ArmorItem.js
 We are going to need a list of armor pieces, for that purpose we create the file `src/client/app/hero/components/ArmorItem.js`, 
-it is a simple functional component that recieves 3
+it is a simple functional component that receives 3
 props which are: `image`, `name`, `type`.
 
 ##### ArmorList.js
@@ -44,7 +44,7 @@ Optionally we install the developer tools
 npm install redux-devtools-extension --save-dev
 ```
 
-Once installed, we create our store, we create our store in `src/client/app/store.js`
+Once installed, we create our store in `src/client/app/store.js`
 
 It is important to note that we are using the `composeWithDevTools` function to allow chrome redux extension
 watch our Redux store and make it possible to "time travel" 👌
