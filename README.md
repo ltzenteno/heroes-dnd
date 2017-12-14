@@ -4,7 +4,7 @@ For this example we will be using some cool libraries / technologies, it expects
 about React and it is just a quick explanation and not meant to be a detailed step by step tutorial 😪.
 
 Say we are ultra scientists in charge of assembling Mega Man, a great hero.
-and our job is to put the corresponding parts in the correct place.
+And our job is to put the corresponding parts in the correct place.
 
 To get our job done, we need to have a UI that can help us drag different pieces of armor
 into the main blueprint.
@@ -220,7 +220,7 @@ const resetArmor = state => {
 ```
 Each property contains the corresponding data of each part of the armor.
 
-If we manage to configure it correctly, we can see our store in the Chrome Rredux tab:
+If we manage to configure it correctly, we can see our store in the Chrome Redux tab:
 
 <img width="1343" alt="screen shot 2017-12-13 at 4 00 31 pm" src="https://user-images.githubusercontent.com/5360863/33964707-f4dc6a5e-e01e-11e7-84c7-a037f607d524.png">
 
