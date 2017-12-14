@@ -132,7 +132,7 @@ return items.map((item, index) => {
 
 Our armor list will render like this:
 
-<img width="384" alt="list" src="https://user-images.githubusercontent.com/5360863/33951919-e4a31044-dff5-11e7-9678-69088a215bd4.png">
+<img width="389" alt="armor list" src="https://user-images.githubusercontent.com/5360863/34001099-b3dfe15c-e0b4-11e7-80da-270d7d729c5b.png">
 
 ---
 ### Redux
