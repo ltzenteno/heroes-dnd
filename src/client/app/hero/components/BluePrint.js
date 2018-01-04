@@ -72,7 +72,7 @@ const styles = {
     backgroundImage:`url(${blueprint})`,
     minHeight:1101,
     width:726,
-    position:'fixed'
+    position:'absolute'
   },
   headTarget:{
     backgroundColor:'rgba(255,0,0,0.2)',
